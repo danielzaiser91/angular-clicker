@@ -1,0 +1,9 @@
+<button
+  [className]="'nav-button bg-' + bgColor()"
+  [routerLink]="link()"
+  routerLinkActive="active"
+  ariaCurrentWhenActive="page"
+  [disabled]="disabled()"
+>
+  {{ label() }}
+</button>

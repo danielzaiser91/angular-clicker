@@ -1,0 +1,14 @@
+#topSection {
+  border-bottom: 1px solid;
+  background-color: rgb(240, 164, 164);
+}
+#subnav {
+  border-top: 1px dashed;
+}
+
+ul {
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  list-style-type: none;
+}

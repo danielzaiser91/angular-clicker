@@ -1,27 +1,22 @@
 # AngularClicker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+clicker game mit Angular.
+Heißt zwar clicker, aber soll eig kein typischer Klicker sein.
+Das Hauptgameplay soll nicht sein, einen button so schnell wie möglich zu klicken...
 
-## Development server
+Eher upgrade basiert und automatisch wird man besser, zB klick auf training startet training und man kriegt
+x ressource über y zeit... also so dass man keinen vorteil hat wenn man autoclicker verwendet, weil das ist doof...
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# aktuelle TODOs
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Sub-Navigation fixen
+  Bug: Klick auf "Training" navigiert nicht zur Trainings Component? 🤔
 
-## Build
+# Pläne
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+...idk, hier könnte man aufschreiben was so die großen Pläne sind...
+- Kapitelbasiertes Gameplay?
+  Man hat pro Kapitel ein Haupt-Thema um das sich alle upgrades, etc drehen, eine Hauptressource die man über viele Wege erhöhen kann.
+  Dadurch freut man sich wenn man dieses Feature am Ende des Kapitels gemeistert hat, und mit dem nächsten Kapitel in ein neues Feature reinstarten kann (welches sich abheben sollte vom vorherigen gameplay, also abwechslung reinbringt, und gleichzeitig auch das vorherige feature nutzt, also nicht dass es useless wird auf einmal...)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

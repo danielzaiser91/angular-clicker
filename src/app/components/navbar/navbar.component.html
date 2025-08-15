@@ -1,0 +1,40 @@
+<div id="topSection">
+  <nav>
+    <ul>
+      @for (route of routes; track route.path) {
+      <li>
+        <app-nav-button
+          [link]="'/' + route.path"
+          [disabled]="!route.isUnlocked"
+          [label]="!route.isUnlocked ? '???' : route.label"
+          [bgColor]="
+            !route.isUnlocked
+              ? 'grey'
+              : route.path !== routeDesc()?.path
+              ? route.bgColor
+              : 'red'
+          "
+        >
+        </app-nav-button>
+      </li>
+      }
+    </ul>
+  </nav>
+  @if (routeDesc(); as parentRoute) { @if (routeDesc()?.children?.length) {
+  <nav id="subnav">
+    <ul>
+      @for (route of routeDesc()!.children; track route.path) {
+      <li>
+        <app-nav-button
+          [link]="['/', parentRoute.path, route.path]"
+          [disabled]="!route.isUnlocked"
+          [label]="!route.isUnlocked ? '???' : route.label"
+          [bgColor]="!route.isUnlocked ? 'grey' : route.bgColor"
+        >
+        </app-nav-button>
+      </li>
+      }
+    </ul>
+  </nav>
+  } }
+</div>
